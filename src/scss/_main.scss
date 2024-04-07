@@ -1,0 +1,202 @@
+main {
+    #UpBanner {
+        background-image: url('../images/upbanner/bg.jpg');
+        background-repeat: no-repeat;
+        height: 100vh;
+        position: relative;
+
+        #upBannerImages {
+
+            #brocolli {
+                position: absolute;
+                top: 0;
+            }
+
+            #tomato {
+                position: absolute;
+                bottom: 0;
+            }
+
+            #orange {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+
+            #vegetables {
+                position: absolute;
+                top: 5vh;
+                right: 0;
+            }
+        }
+
+        #upBannerText {
+            display: flex;
+            flex-direction: column;
+            gap: 2vh;
+            position: absolute;
+            top: 35vh;
+            left: 5vh;
+
+            .upBannerText-Header {
+
+                h2 {
+                    font-size: 30px;
+                    font-style: italic;
+                    font-weight: 400;
+                    transform: skewX(15deg);
+                    font-family: "Caveat", cursive;
+                    color: #7d8978;
+                }
+
+                h1 {
+                    font-size: 65px;
+                    width: 65vh;
+                    color: #2a491d;
+                }
+            }
+
+            ul {
+
+                li {
+
+                    &:nth-child(1) {
+                        background-color: #ffbd3c;
+
+                        &:hover {
+                            background-color: #50a72c;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        background-color: #50a72c;
+
+                        &:hover {
+                            background-color: #ffbd3c;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #ServiceOptions {
+        display: flex;
+        justify-content: space-around;
+        box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+    }
+
+    #FarmingWithLove {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        #farmingWithLove-Image {
+            object-fit: contain;
+            width: 50vh;
+        }
+
+        #farmingWithLove-Main {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 5vh;
+
+            #farmingWithLove-Options {
+                display: flex;
+                gap: 5vh;
+
+                li {
+                    padding: 3vh;
+                    box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.07);
+                    font-weight: 600;
+                    color:#2a491d;
+               
+                    i {
+                        color: #ffbd3c;
+                        margin-right: 2vh;
+                    }
+                }
+
+            }
+
+            #farmingWithLove-Text {
+
+                h4 {
+                    color: #50a72c;
+                }
+
+                p {
+                    color: #7d8978;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 5vh;
+                    border-top: solid 1px #7d8978;
+                    width: 25vh;
+                    height: 2vh;
+                }
+
+            }
+
+            #farmingWithLove-DiscoverHeader {
+                display: flex;
+                gap: 2vh;
+
+            }
+        }
+    }
+
+    #OurCategories {
+        display: flex;
+        flex-direction: column;
+        gap: 15vh;
+
+        .ourCategories-Header {
+            text-align: center;
+        }
+
+        #ourCategories-Cards {
+            display: flex;
+            justify-content: space-around;
+
+            .ourCategories-Card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                background-color: #7d8978;
+                margin: 5vh;
+                
+                img {
+                    position: relative;
+                    bottom: 14vh;
+                }
+
+                .ourCategories-CardBack {
+
+                    a {
+                        color:#2a491d;
+                    }
+    
+                }
+
+                i {
+                    color: white;
+                }
+
+                .arrowBackground-Green {
+                    background-color: #2a491d;
+                }
+
+                .arrowBackground-Orange {
+                    background-color: #ffbd3c;
+                }
+            }
+        }
+    }
+
+    #
+}

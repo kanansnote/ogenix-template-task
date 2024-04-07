@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.a-Buttons {
+  display: flex;
+  gap: 2vh;
+}
+.a-Buttons li {
+  padding: 2vh 4vh;
+  border-radius: 3vh;
+}
+.a-Buttons li a {
+  color: white;
+}
+
+.textHeader {
+  display: flex;
+  flex-direction: column;
+}
+.textHeader h2 {
+  font-family: "Caveat", cursive;
+  color: #50a72c;
+}
+.textHeader h1 {
+  font-size: 30px;
+  color: #2a491d;
+}
+
+header {
+  display: flex;
+}
+header #HeaderLogo {
+  background-color: #2A491D;
+}
+header #HeaderLogo img {
+  padding: 9vh 4vh 4vh;
+}
+header #HeaderBoth {
+  width: 100%;
+}
+header #HeaderBoth #HeaderTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2A491D;
+  padding: 2vh 0 2vh 0;
+  color: white;
+}
+header #HeaderBoth #HeaderTop #headerTopLeft {
+  display: flex;
+  gap: 5vh;
+}
+header #HeaderBoth #HeaderTop #headerTopLeft .socialLinks {
+  display: flex;
+  gap: 4vh;
+  list-style: none;
+  background-color: #223d17;
+  padding: 2vh;
+  position: absolute;
+  top: 0;
+  left: 74vh;
+}
+header #HeaderBoth #HeaderTop #headerTopRight {
+  display: flex;
+  gap: 5vh;
+  margin-right: 5vh;
+}
+header #HeaderBoth #HeaderTop #headerTopRight span {
+  display: flex;
+  align-items: center;
+  gap: 2vh;
+}
+header #HeaderBoth #HeaderTop #headerTopRight span:nth-child(1)::after {
+  content: "";
+  width: 1vh;
+  height: 3vh;
+  padding-right: 2vh;
+  border-right: solid 1px #7d8978;
+}
+header #HeaderBoth #HeaderTop #headerTopRight span i {
+  color: #ffbd3c;
+}
+header #HeaderBoth #HeaderBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.5vh 3.5vh 3.5vh 7vh;
+}
+header #HeaderBoth #HeaderBottom nav ul {
+  display: flex;
+  align-items: center;
+  gap: 14vh;
+}
+header #HeaderBoth #HeaderBottom nav ul a {
+  color: #7d8978;
+}
+header #HeaderBoth #HeaderBottom nav ul a:hover {
+  color: #50a72c;
+}
+header #HeaderBoth #HeaderBottom #headerBottomRight {
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+}
+header #HeaderBoth #HeaderBottom #headerBottomRight::before {
+  content: "";
+  width: 1vh;
+  height: 3vh;
+  border-left: solid 1px #7d8978;
+  padding-left: 12vh;
+}
+header #HeaderBoth #HeaderBottom #headerBottomRight i {
+  font-size: 20px;
+}
+header #HeaderBoth #HeaderBottom #headerBottomRight i:nth-child(1) {
+  font-size: 30px;
+  padding-right: 4vh;
+  cursor: pointer;
+}
+header #HeaderBoth #HeaderBottom #headerBottomRight i:nth-child(1):hover {
+  color: #50a72c;
+}
+header #HeaderBoth #HeaderBottom #headerBottomRight i:nth-child(2) {
+  background-color: #50a72c;
+  color: white;
+  padding: 3vh;
+  border-radius: 5vh;
+}
+header #HeaderBoth #HeaderBottom #headerBottomRight a {
+  background-color: #50a72c;
+  border-radius: 5vh;
+  padding: 3vh;
+  color: white;
+}
+
+main #UpBanner {
+  background-image: url("../images/upbanner/bg.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+main #UpBanner #upBannerImages #brocolli {
+  position: absolute;
+  top: 0;
+}
+main #UpBanner #upBannerImages #tomato {
+  position: absolute;
+  bottom: 0;
+}
+main #UpBanner #upBannerImages #orange {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+main #UpBanner #upBannerImages #vegetables {
+  position: absolute;
+  top: 5vh;
+  right: 0;
+}
+main #UpBanner #upBannerText {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  position: absolute;
+  top: 35vh;
+  left: 5vh;
+}
+main #UpBanner #upBannerText .upBannerText-Header h2 {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 400;
+  transform: skewX(15deg);
+  font-family: "Caveat", cursive;
+  color: #7d8978;
+}
+main #UpBanner #upBannerText .upBannerText-Header h1 {
+  font-size: 65px;
+  width: 65vh;
+  color: #2a491d;
+}
+main #UpBanner #upBannerText ul li:nth-child(1) {
+  background-color: #ffbd3c;
+}
+main #UpBanner #upBannerText ul li:nth-child(1):hover {
+  background-color: #50a72c;
+}
+main #UpBanner #upBannerText ul li:nth-child(2) {
+  background-color: #50a72c;
+}
+main #UpBanner #upBannerText ul li:nth-child(2):hover {
+  background-color: #ffbd3c;
+}
+main #ServiceOptions {
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+}
+main #FarmingWithLove {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main #FarmingWithLove #farmingWithLove-Image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 50vh;
+}
+main #FarmingWithLove #farmingWithLove-Main {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+main #FarmingWithLove #farmingWithLove-Main #farmingWithLove-Options {
+  display: flex;
+  gap: 5vh;
+}
+main #FarmingWithLove #farmingWithLove-Main #farmingWithLove-Options li {
+  padding: 3vh;
+  box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.07);
+  font-weight: 600;
+  color: #2a491d;
+}
+main #FarmingWithLove #farmingWithLove-Main #farmingWithLove-Options li i {
+  color: #ffbd3c;
+  margin-right: 2vh;
+}
+main #FarmingWithLove #farmingWithLove-Main #farmingWithLove-Text h4 {
+  color: #50a72c;
+}
+main #FarmingWithLove #farmingWithLove-Main #farmingWithLove-Text p {
+  color: #7d8978;
+}
+main #FarmingWithLove #farmingWithLove-Main #farmingWithLove-Text::before {
+  content: "";
+  position: absolute;
+  top: 5vh;
+  border-top: solid 1px #7d8978;
+  width: 25vh;
+  height: 2vh;
+}
+main #FarmingWithLove #farmingWithLove-Main #farmingWithLove-DiscoverHeader {
+  display: flex;
+  gap: 2vh;
+}
+main #OurCategories {
+  display: flex;
+  flex-direction: column;
+  gap: 15vh;
+}
+main #OurCategories .ourCategories-Header {
+  text-align: center;
+}
+main #OurCategories #ourCategories-Cards {
+  display: flex;
+  justify-content: space-around;
+}
+main #OurCategories #ourCategories-Cards .ourCategories-Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #7d8978;
+  margin: 5vh;
+}
+main #OurCategories #ourCategories-Cards .ourCategories-Card img {
+  position: relative;
+  bottom: 14vh;
+}
+main #OurCategories #ourCategories-Cards .ourCategories-Card .ourCategories-CardBack a {
+  color: #2a491d;
+}
+main #OurCategories #ourCategories-Cards .ourCategories-Card i {
+  color: white;
+}
+main #OurCategories #ourCategories-Cards .ourCategories-Card .arrowBackground-Green {
+  background-color: #2a491d;
+}
+main #OurCategories #ourCategories-Cards .ourCategories-Card .arrowBackground-Orange {
+  background-color: #ffbd3c;
+}/*# sourceMappingURL=style.css.map */

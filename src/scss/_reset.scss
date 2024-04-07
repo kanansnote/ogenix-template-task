@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.a-Buttons {
+    display: flex;
+    gap: 2vh;
+
+    li {
+        padding: 2vh 4vh;
+        border-radius: 3vh;
+
+
+        a {
+            color: white;
+        }
+    }
+}
+
+.textHeader {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        font-family: 'Caveat', cursive;
+        color: #50a72c;
+    }
+
+    h1 {
+        font-size: 30px;
+        color: #2a491d;
+    }
+}
