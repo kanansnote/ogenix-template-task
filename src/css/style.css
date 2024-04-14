@@ -15,6 +15,13 @@ ul {
   list-style-type: none;
 }
 
+.socialLinks {
+  display: flex;
+  gap: 4vh;
+  list-style: none;
+  padding: 2vh;
+}
+
 .a-Buttons {
   display: flex;
   gap: 2vh;
@@ -65,11 +72,7 @@ header #HeaderBoth #HeaderTop #headerTopLeft {
   gap: 5vh;
 }
 header #HeaderBoth #HeaderTop #headerTopLeft .socialLinks {
-  display: flex;
-  gap: 4vh;
-  list-style: none;
   background-color: #223d17;
-  padding: 2vh;
   position: absolute;
   top: 0;
   left: 74vh;
@@ -207,7 +210,31 @@ main #UpBanner #upBannerText ul li:nth-child(2):hover {
 main #ServiceOptions {
   display: flex;
   justify-content: space-around;
+  padding: 5vh;
   box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+}
+main #ServiceOptions .serviceOptions-Card {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+main #ServiceOptions .serviceOptions-Card::after, main #ServiceOptions .serviceOptions-Card:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  left: 43.5vh;
+  border-right: solid 1px #7d8978;
+  width: 1vh;
+  height: 11vh;
+}
+main #ServiceOptions .serviceOptions-Card:nth-child(2)::after {
+  left: 45vh;
+}
+main #ServiceOptions .serviceOptions-Card:nth-last-child(1)::after {
+  display: none;
+}
+main #ServiceOptions .serviceOptions-Card .serviceOptions-CardText {
+  display: flex;
+  flex-direction: column;
 }
 main #FarmingWithLove {
   display: flex;
@@ -239,6 +266,9 @@ main #FarmingWithLove #farmingWithLove-Main #farmingWithLove-Options li i {
   color: #ffbd3c;
   margin-right: 2vh;
 }
+main #FarmingWithLove #farmingWithLove-Main #farmingWithLove-Text {
+  position: relative;
+}
 main #FarmingWithLove #farmingWithLove-Main #farmingWithLove-Text h4 {
   color: #50a72c;
 }
@@ -248,9 +278,9 @@ main #FarmingWithLove #farmingWithLove-Main #farmingWithLove-Text p {
 main #FarmingWithLove #farmingWithLove-Main #farmingWithLove-Text::before {
   content: "";
   position: absolute;
-  top: 5vh;
+  top: 17vh;
   border-top: solid 1px #7d8978;
-  width: 25vh;
+  width: 100%;
   height: 2vh;
 }
 main #FarmingWithLove #farmingWithLove-Main #farmingWithLove-DiscoverHeader {
@@ -292,4 +322,8 @@ main #OurCategories #ourCategories-Cards .ourCategories-Card .arrowBackground-Gr
 }
 main #OurCategories #ourCategories-Cards .ourCategories-Card .arrowBackground-Orange {
   background-color: #ffbd3c;
+}
+
+footer {
+  background-image: url("../images/footer/bg-4.jpg");
 }/*# sourceMappingURL=style.css.map */
