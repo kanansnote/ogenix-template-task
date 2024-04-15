@@ -59,10 +59,10 @@ header {
     
         #HeaderBottom {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
-            padding: 3.5vh 3.5vh 3.5vh 7vh;
-
+            padding-top: 3.5vh;
+            padding-bottom: 3.5vh;
             
             nav {
                 
@@ -89,7 +89,7 @@ header {
                 &::before {
                     content: "";
                     width: 1vh;
-                    height: 3vh;
+                    height: 5vh;
                     border-left: solid 1px #7d8978;
                     padding-left: 12vh;
                 }
@@ -99,7 +99,7 @@ header {
 
                     &:nth-child(1) {
                         font-size: 30px;
-                        padding-right: 4vh;
+                        padding-right: 5vh;
                         cursor: pointer;
 
                         &:hover {

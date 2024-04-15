@@ -24,19 +24,9 @@ ul {
     padding: 2vh;
 }
 
-.a-Buttons {
-    display: flex;
-    gap: 2vh;
-
-    li {
-        padding: 2vh 4vh;
-        border-radius: 3vh;
-
-
-        a {
-            color: white;
-        }
-    }
+section {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .textHeader {
@@ -52,4 +42,41 @@ ul {
         font-size: 30px;
         color: #2a491d;
     }
+}
+
+.a-Buttons {
+    display: flex;
+    gap: 2vh;
+
+    li {
+        border-radius: 3vh;
+
+        a {
+            color: white;
+        }
+    }
+}
+
+.a-Button-Yellow {
+    background-color: #ffbd3c;
+
+    &:hover {
+        background-color: #50a72c;
+    }
+}
+
+.a-Button-Green {
+    background-color: #50a72c;
+
+    &:hover {
+        background-color: #ffbd3c;
+    }
+}
+
+.a-Button-Yellow, .a-Button-Green {
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5vh;
+    transition: 0.3s ease-in-out;
+    width: max-content;
 }
