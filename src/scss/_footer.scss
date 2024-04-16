@@ -1,5 +1,179 @@
 footer {
     background-image: url('../images/footer/bg-4.jpg');
+    color: white;
+    display: flex;
+    flex-direction: column;
 
-    
+    a {
+        color: #91a589;
+        font-weight: 400;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            color: #ffbd3c;
+        }
+    }
+
+    p {
+        color: white;
+    }
+
+    p, a {
+        font-size: 16px;
+    }
+
+    h3 {
+        display: flex;
+        align-items: center;
+        gap: 1.5vh;
+
+        img {
+            padding-top: 0.5vh;
+        }
+    }
+
+    #footerTop {
+        display: flex;
+        gap: 2vh;
+        align-items: center;
+        padding: 10vh;
+        position: relative;
+
+        #footerTopLeft {
+            display: flex;
+            flex-direction: column;
+            gap: 5vh;
+
+            img {
+                object-fit: contain;
+                width: 25%;
+                height: 25%;
+            }
+
+            h3 {
+                width: 80%;
+            }
+
+            .footerSocialLinks {
+                display: flex;
+                gap: 1vh;
+
+                li {
+                    width: 7vh;
+                    height: 7vh;
+                    background-color: #223d17;
+                    border-radius: 5vh;
+                    transition: 0.4s ease-in-out;
+                    cursor: pointer;
+                    text-align: center;
+                    padding-top: 1.7vh;
+
+                    a {
+                        color: white;
+                    }
+
+                    &:hover {
+                        background-color: #ffbd3c;
+                        transform: translateY(-2vh);
+                    }
+                }
+            }
+
+        }
+
+        #footerTopRight {
+            display: flex;
+            align-items: flex-start;
+            gap: 5vh;
+            
+            .footerTopCenterLinks {
+                display: flex;
+                flex-direction: column;
+                width: 30vh;
+                gap: 4vh;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5vh;
+                }
+            }
+
+            #gallery {
+                display: flex;
+                flex-direction: column;
+                gap: 4.5vh;
+                
+                .galleryImages {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    gap: 2vh;
+                    width: 50vh;
+
+                    img {
+                        width: 12vh;
+                        height: 12vh;
+                        border-radius: 1vh;
+                    }
+                }
+            }
+
+            #contactInfo {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 3vh;
+                width: 40vh;
+
+                #contactInfoMain {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 5.5vh;
+
+                    p {
+                        color: #91a589;
+                        width: 70%;
+                    }
+                    
+                    #emailAddress {
+                        font-size: 18px;
+                    }
+
+                    span {
+                        position: relative;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: -1vh;
+                            left: 0;
+                            width: 65%;
+                            height: 1px;
+                            border-bottom: solid 1px white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #footerBottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5vh;
+        padding: 5vh;
+        background-color: #223d17;
+
+        #ogenixWebsite {
+            color: #FFCC7E;
+        }
+
+        ul {
+            display: flex;
+            gap: 4vh;
+        }
+    }
 }

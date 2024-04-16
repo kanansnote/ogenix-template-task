@@ -87,3 +87,19 @@ section {
     font-size: 20px;
     font-weight: 600;
 }
+
+.arrowBackground-Green {
+    background-color: #50a72c;
+
+    &:hover {
+        background-color: #ffbd3c;
+    }
+}
+
+.arrowBackground-Yellow {
+    background-color: #ffbd3c;
+
+    &:hover {
+        background-color: #50a72c;
+    }
+}

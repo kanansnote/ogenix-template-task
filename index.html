@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="./src/images/favicon/cropped-favicon-32x32.png" type="image/png">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
@@ -153,7 +155,7 @@
                         <a class="cardLink" href="#">Fresh Fruits</a>
                         <p>When nothing prevents our to we like best be.</p>
                     </div>
-                    <a href="#"><i class="fa-solid fa-arrow-right arrowBackground-Orange"></i></a>
+                    <a href="#"><i class="fa-solid fa-arrow-right arrowBackground-Yellow"></i></a>
                 </div>
                 <div class="ourCategories-Card">
                     <div class="ourCategories-Images">
@@ -177,7 +179,7 @@
                         <a class="cardLink" href="#">Dried products</a>
                         <p>When nothing prevents our to we like best be.</p>
                     </div>
-                    <a href="#"><i class="fa-solid fa-arrow-right arrowBackground-Orange"></i></a>
+                    <a href="#"><i class="fa-solid fa-arrow-right arrowBackground-Yellow"></i></a>
                 </div>
             </div>
         </section>
@@ -274,23 +276,281 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer>
-        <div>
-            <div>
-                <div>
-                    <img src="./src/images/header-footer/logo.png" alt="Logo">
-                    <p>We’re Providing Everyday Fresh and Quality Products.</p>
-                    <ul class="socialLinks">
+        <section id="MeetTheFarmers">
+            <div class="textHeader meetTheFarmers-Header">
+                <h2>Meet the Farmers</h2>
+                <h1>Awesome farmers team here to help you</h1>
+            </div>
+            <div id="meetTheFarmers-Cards">
+                <div class="meetTheFarmers-Card">
+                    <img class="teamMembers" src="./src/images/meet-farmers/team-member1.png" alt="Team Member 1">
+                    <ul class="socialLinks followTheirSocials">
                         <li><i class="fab fa-twitter"></i></li>
                         <li><i class="fab fa-facebook"></i></li>
-                        <li><i class="fab fa-pinterest-p"></i></li>
                         <li><i class="fab fa-instagram"></i></li>
                     </ul>
+                    <div class="meetTheFarmers-AlternateImages">
+                        <img src="./src/images/meet-farmers/leafs.png" alt="Leafs">
+                        <img src="./src/images/meet-farmers/orange.png" alt="Orange">
+                    </div>
+                    <div class="meetTheFarmers-Bottom">
+                        <h2>Kevin Martin</h2>
+                        <p>Senior Farmer</p>
+                    </div>
+                </div>
+                <div class="meetTheFarmers-Card">
+                    <img class="teamMembers" src="./src/images/meet-farmers/team-member2.png" alt="Team Member 2">
+                    <ul class="socialLinks followTheirSocials">
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-facebook"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                    </ul>
+                    <div class="meetTheFarmers-AlternateImages">
+                        <img src="./src/images/meet-farmers/leafs.png" alt="Leafs">
+                        <img src="./src/images/meet-farmers/orange.png" alt="Orange">
+                    </div>
+                    <div class="meetTheFarmers-Bottom">
+                        <h2>Aleesha Brown</h2>
+                        <p>Senior Farmer</p>
+                    </div>
+                </div>
+                <div class="meetTheFarmers-Card">
+                    <img class="teamMembers" src="./src/images/meet-farmers/team-member3.png" alt="Team Member 3">
+                    <ul class="socialLinks followTheirSocials">
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-facebook"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                    </ul>
+                    <div class="meetTheFarmers-AlternateImages">
+                        <img src="./src/images/meet-farmers/leafs.png" alt="Leafs">
+                        <img src="./src/images/meet-farmers/orange.png" alt="Orange">
+                    </div>
+                    <div class="meetTheFarmers-Bottom">
+                        <h2>Mike Hardson</h2>
+                        <p>Senior Farmer</p>
+                    </div>
                 </div>
             </div>
-            <div></div>
+        </section>
+        <section id="OurFeedbacks">
+            <div class="textHeader ourFeedbacks-Header">
+                <div id="ourFeedbacks-HeaderTop">
+                    <h2>Our Feedbacks</h2>
+                    <h1>What are they talking about our company?</h1>
+                </div>
+                <p>Aliquam viverra arcu. Donec aliquet blandit enim feugiat. Suspendisse id quam sed eros tincidunt luctus sit amet eu nibh tempus turpis.</p>
+                <a class="a-Button-Yellow" href="#">View All Testimonials</a>
+            </div>
+            <img id="littleGreenShape" src="./src/images/our-feedbacks/little-shape.png" alt="Little Shape Image">
+            <div class="ourFeedbacks-Center swiper-container">
+                <div class="swiper-button-prev BothSwiperArrows">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="swiper-button-next BothSwiperArrows">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="ourFeedbacks-CenterCards swiper-wrapper">
+                    <div class="ourFeedbacks-CenterCard swiper-slide">
+                        <img src="./src/images/our-feedbacks/icon-1.png" alt="Quote Icon">
+                        <p>This is due to their excellent service, 
+                            competitive pricing and customer support. 
+                            It’s throughly refresing to get such a personal simply the touch.
+                        </p>
+                        <div class="ourFeedbacks-CenterCardBottom">
+                            <h3>Aleesha Brown</h3>
+                            <h5>CEO Ogenix</h5>
+                        </div>
+                        <img class="ourFeedbacks-Person" src="./src/images/our-feedbacks/image-about.png" alt="">
+                    </div>
+                    <div class="ourFeedbacks-CenterCard swiper-slide">
+                        <img src="./src/images/our-feedbacks/icon-1.png" alt="Quote Icon">
+                        <p>This is due to their excellent service, 
+                            competitive pricing and customer support. 
+                            It’s throughly refresing to get such a personal simply the touch.
+                        </p>
+                        <div class="ourFeedbacks-CenterCardBottom">
+                            <h3>Aleesha Brown</h3>
+                            <h5>CEO Ogenix</h5>
+                        </div>
+                        <img class="ourFeedbacks-Person" src="./src/images/our-feedbacks/image-about.png" alt="">
+                    </div>
+                    <div class="ourFeedbacks-CenterCard swiper-slide">
+                        <img src="./src/images/our-feedbacks/icon-1.png" alt="Quote Icon">
+                        <p>This is due to their excellent service, 
+                            competitive pricing and customer support. 
+                            It’s throughly refresing to get such a personal simply the touch.
+                        </p>
+                        <div class="ourFeedbacks-CenterCardBottom">
+                            <h3>Aleesha Brown</h3>
+                            <h5>CEO Ogenix</h5>
+                        </div>
+                        <img class="ourFeedbacks-Person" src="./src/images/our-feedbacks/image-about.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="ourFeedback-Right">
+                <img src="./src/images/our-feedbacks/Mint.png" alt="Mint">
+                <img src="./src/images/our-feedbacks/feedback_home-CDE7E4J.jpg" alt="Woman">
+            </div>
+        </section>
+        <section id="HealthyFood">
+            <div class="healthyFood-Card">
+                <img class="healthyFood-MainImage" src="./src/images/healthy-food/image1.jpg" alt="Healthy Food Image 1">
+                <div class="healthyFood-Header">
+                    <img class="gradientLine" src="./src/images/healthy-food/line.png" alt="Gradient Line">
+                    <h1>Healthy Food</h1>
+                    <p>Vegan, Organic</p>
+                    <img class="backgroundRightShape" src="./src/images/healthy-food/base-hover.png" alt="Background Right Shape">
+                    <i class="fa-solid fa-arrow-right arrowBackground-Yellow"></i>
+                </div>
+            </div>
+            <div class="healthyFood-Card">
+                <img class="healthyFood-MainImage" src="./src/images/healthy-food/image2.jpg" alt="Healthy Food Image 2">
+                <div class="healthyFood-Header">
+                    <img class="gradientLine" src="./src/images/healthy-food/line.png" alt="Gradient Line">
+                    <h1>Healthy Food</h1>
+                    <p>Vegan, Organic</p>
+                    <img class="backgroundRightShape" src="./src/images/healthy-food/base-hover.png" alt="Background Right Shape">
+                    <i class="fa-solid fa-arrow-right arrowBackground-Yellow"></i>
+                </div>
+            </div>
+            <div class="healthyFood-Card">
+                <img class="healthyFood-MainImage" src="./src/images/healthy-food/image3.jpg" alt="Healthy Food Image 3">
+                <div class="healthyFood-Header">
+                    <img class="gradientLine" src="./src/images/healthy-food/line.png" alt="Gradient Line">
+                    <h1>Healthy Food</h1>
+                    <p>Vegan, Organic</p>
+                    <img class="backgroundRightShape" src="./src/images/healthy-food/base-hover.png" alt="Background Right Shape">
+                    <i class="fa-solid fa-arrow-right arrowBackground-Yellow"></i>
+                </div>
+            </div>
+            <div class="healthyFood-Card">
+                <img class="healthyFood-MainImage" src="./src/images/healthy-food/image4.jpg" alt="Healthy Food Image 4">
+                <div class="healthyFood-Header">
+                    <img class="gradientLine" src="./src/images/healthy-food/line.png" alt="Gradient Line">
+                    <h1>Healthy Food</h1>
+                    <p>Vegan, Organic</p>
+                    <img class="backgroundRightShape" src="./src/images/healthy-food/base-hover.png" alt="Background Right Shape">
+                    <i class="fa-solid fa-arrow-right arrowBackground-Yellow"></i>
+                </div>
+            </div>
+        </section>
+        <section id="FromTheBlogPosts">
+            <div class="textHeader fromTheBlogPosts-Header">
+                <h2>From the Blog Posts</h2>
+                <h1>Latest news updates & articles</h1>
+            </div>
+            <div id="fromTheBlogPosts-Cards">
+                <div class="fromTheBlogPosts-Card">
+                    <img src="./src/images/blog-posts/image-1.jpg" alt="Blog Post Image 1">
+                    <div class="fromTheBlogPosts-Main">
+                        <div class="fromTheBlogPosts-MainTop">
+                            <a href="https://themesflat.com/ogenixkit/author/admin/"><i class="fa-solid fa-circle-user"></i>Admin</a>
+                            <a href="https://themesflat.com/ogenixkit/category/apartment/"><i class="fa-solid fa-folder-open"></i>Apartment</a>
+                        </div>
+                        <a class="cardLink" href="https://themesflat.com/ogenixkit/2023/11/22/which-healthy-food-growthstrategies-required/">Which healthy food growth strategies required</a>
+                        <a class="readMore" href="https://themesflat.com/ogenixkit/2023/11/22/which-healthy-food-growthstrategies-required-2/ class="cardLink"">Read More</a>
+                    </div>
+                </div>
+                <div class="fromTheBlogPosts-Card">
+                    <img src="./src/images/blog-posts/image-2.jpg" alt="Blog Post Image 2">
+                    <div class="fromTheBlogPosts-Main">
+                        <div class="fromTheBlogPosts-MainTop">
+                            <a href="https://themesflat.com/ogenixkit/author/admin/"><i class="fa-solid fa-circle-user"></i>Admin</a>
+                            <a href="https://themesflat.com/ogenixkit/category/apartment/"><i class="fa-solid fa-folder-open"></i>Apartment</a>
+                        </div>
+                        <a class="cardLink" href="https://themesflat.com/ogenixkit/2023/11/22/which-healthy-food-growthstrategies-required/">Which healthy food growth strategies required</a>
+                        <a class="readMore" href="https://themesflat.com/ogenixkit/2023/11/22/which-healthy-food-growthstrategies-required-2/">Read More</a>
+                    </div>
+                </div>
+                <div class="fromTheBlogPosts-Card">
+                    <img src="./src/images/blog-posts/image-3.jpg" alt="Blog Post Image 3">
+                    <div class="fromTheBlogPosts-Main">
+                        <div class="fromTheBlogPosts-MainTop">
+                            <a href="https://themesflat.com/ogenixkit/author/admin/"><i class="fa-solid fa-circle-user"></i>Admin</a>
+                            <a href="https://themesflat.com/ogenixkit/category/apartment/"><i class="fa-solid fa-folder-open"></i>Apartment</a>
+                        </div>
+                        <a class="cardLink" href="https://themesflat.com/ogenixkit/2023/11/22/which-healthy-food-growthstrategies-required/">Which healthy food growth strategies required</a>
+                        <a class="readMore" href="https://themesflat.com/ogenixkit/2023/11/22/which-healthy-food-growthstrategies-required-2/">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Subscription">
+            <img id="subscriptionBackgroundImage" src="./src/images/subscription/bg-1.png" alt="">
+            <div id="subscription-Left">
+                <img id="attachmentIcon" src="./src/images/subscription/icon.png" alt="Attachment Icon">
+                <div class="textHeader subscription-TextHeader">
+                    <h2>Quisque vel ortor</h2>
+                    <h1>Subscribe to newsletter</h1>
+                </div>
+                <img id="appleImage" src="./src/images/subscription/03.png" alt="">
+            </div>
+            <div id="subscription-Right">
+                <img src="./src/images/subscription/02.png" alt="">
+                <img src="./src/images/subscription/arrow.png" alt="">
+                <form action="">
+                    <input type="text" placeholder="Email Address">
+                    <button type="submit"><i></i></button>
+                </form>
+                <img src="./src/images/subscription/04.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="footerTop">
+            <div id="footerTopLeft">
+                <img src="./src/images/header-footer/logo.png" alt="Logo">
+                <h3>We’re Providing Everyday Fresh and Quality Products.</h3>
+                <ul class="footerSocialLinks">
+                    <li><a title="Twitter" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a title="Facebook" href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a title="LinkedIn" href="https://linkedin.com/"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                    <li><a title="Instagram" href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div id="footerTopRight">
+                <div class="footerTopCenterLinks">
+                    <h3 class="footerTopCenterHeading">Explore <img src="./src/images/footer/line-1.png" alt="Line Image"></h3>
+                    <ul>
+                        <li><a href="#">About Company</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Become a Seller</a></li>
+                        <li><a href="#">New Products</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="contactInfo">
+                    <h3>Contact <img src="./src/images/footer/line-1.png" alt="Line Image"></h3>
+                    <div id="contactInfoMain">
+                        <p>Valentin, Street Road 24, New York, USA – 67452</p>
+                        <span>+92 (8800) 68 - 8960</span>        
+                        <p id="emailAddress">info@example.com</p>
+                    </div>
+                </div>
+                <div id="gallery">
+                    <h3>Gallery <img src="./src/images/footer/line-1.png" alt="Line Image"></h3>
+                    <div class="galleryImages">
+                        <img src="./src/images/gallery/img_footer1.jpg" alt="">
+                        <img src="./src/images/gallery/img_footer2.png" alt="">
+                        <img src="./src/images/gallery/img_footer3.png" alt="">
+                        <img src="./src/images/gallery/img_footer4.jpg" alt="">
+                        <img src="./src/images/gallery/img_footer5.png" alt="">
+                        <img src="./src/images/gallery/img_footer6.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footerBottom">
+            <p>© 2024 Kanan N. All rights reserved. Powered by <a id="ogenixWebsite" href="https://themesflat.com/ogenixkit/template-kit/home-01/">Themesflat</a>.</p>
+            <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
         </div>
     </footer>
+    
+    <script src="./src/js/script.js"></script>
 </body>
 </html>

@@ -81,6 +81,20 @@ section {
   font-weight: 600;
 }
 
+.arrowBackground-Green {
+  background-color: #50a72c;
+}
+.arrowBackground-Green:hover {
+  background-color: #ffbd3c;
+}
+
+.arrowBackground-Yellow {
+  background-color: #ffbd3c;
+}
+.arrowBackground-Yellow:hover {
+  background-color: #50a72c;
+}
+
 header {
   display: flex;
 }
@@ -388,18 +402,6 @@ main #OurCategories #ourCategories-Cards .ourCategories-Card a i {
   padding-top: 2.1vh;
   transition: 0.3s ease-in-out;
 }
-main #OurCategories #ourCategories-Cards .ourCategories-Card .arrowBackground-Green {
-  background-color: #50a72c;
-}
-main #OurCategories #ourCategories-Cards .ourCategories-Card .arrowBackground-Green:hover {
-  background-color: #ffbd3c;
-}
-main #OurCategories #ourCategories-Cards .ourCategories-Card .arrowBackground-Orange {
-  background-color: #ffbd3c;
-}
-main #OurCategories #ourCategories-Cards .ourCategories-Card .arrowBackground-Orange:hover {
-  background-color: #50a72c;
-}
 main #OrganicFood-Cards {
   display: flex;
   justify-content: space-evenly;
@@ -546,7 +548,538 @@ main #WhyChooseOgenix #whyChooseOgenix-Right #whyChooseOgenix-Middle {
   align-items: center;
   padding-right: 3.7vh;
 }
-
+main #MeetTheFarmers {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15vh;
+}
+main #MeetTheFarmers .meetTheFarmers-Header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #MeetTheFarmers #meetTheFarmers-Cards {
+  display: flex;
+  justify-content: space-around;
+}
+main #MeetTheFarmers #meetTheFarmers-Cards .meetTheFarmers-Card {
+  position: relative;
+}
+main #MeetTheFarmers #meetTheFarmers-Cards .meetTheFarmers-Card .teamMembers {
+  position: relative;
+  z-index: 2;
+}
+main #MeetTheFarmers #meetTheFarmers-Cards .meetTheFarmers-Card .followTheirSocials {
+  display: none;
+  position: absolute;
+  top: 42vh;
+  left: 7vh;
+  z-index: 4;
+}
+main #MeetTheFarmers #meetTheFarmers-Cards .meetTheFarmers-Card .followTheirSocials li {
+  background-color: #223d17;
+  width: 7vh;
+  height: 7vh;
+  text-align: center;
+  padding-top: 1.6vh;
+  border-radius: 6vh;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+main #MeetTheFarmers #meetTheFarmers-Cards .meetTheFarmers-Card .followTheirSocials li i {
+  color: white;
+  transition: 0.7s ease-in-out;
+}
+main #MeetTheFarmers #meetTheFarmers-Cards .meetTheFarmers-Card .followTheirSocials li:hover {
+  background-color: white;
+}
+main #MeetTheFarmers #meetTheFarmers-Cards .meetTheFarmers-Card .followTheirSocials li:hover i {
+  color: #50a72c;
+}
+main #MeetTheFarmers #meetTheFarmers-Cards .meetTheFarmers-Card:after {
+  content: "";
+  position: absolute;
+  left: -7.5vh;
+  top: 20vh;
+  width: 60vh;
+  height: 54.5vh;
+  z-index: -1;
+  background-color: #2a491d;
+  border-top-left-radius: 20vh;
+  border-top-right-radius: 20vh;
+  transition: 0.3s ease-in-out;
+}
+main #MeetTheFarmers #meetTheFarmers-Cards .meetTheFarmers-Card:hover::after {
+  background-color: #50a72c;
+}
+main #MeetTheFarmers #meetTheFarmers-Cards .meetTheFarmers-Card:hover .followTheirSocials {
+  display: flex;
+}
+main #MeetTheFarmers #meetTheFarmers-Cards .meetTheFarmers-Card .meetTheFarmers-AlternateImages img {
+  position: absolute;
+}
+main #MeetTheFarmers #meetTheFarmers-Cards .meetTheFarmers-Card .meetTheFarmers-AlternateImages img:nth-child(1) {
+  top: 15vh;
+  left: -13vh;
+  z-index: 1;
+}
+main #MeetTheFarmers #meetTheFarmers-Cards .meetTheFarmers-Card .meetTheFarmers-AlternateImages img:nth-child(2) {
+  bottom: 0;
+  right: -5vh;
+  z-index: 3;
+  transition: 0.3s;
+}
+main #MeetTheFarmers #meetTheFarmers-Cards .meetTheFarmers-Card .meetTheFarmers-AlternateImages img:nth-child(2):hover {
+  transform: scale(0.9);
+}
+main #MeetTheFarmers #meetTheFarmers-Cards .meetTheFarmers-Card .meetTheFarmers-Bottom {
+  text-align: center;
+  position: relative;
+  top: 10vh;
+}
+main #MeetTheFarmers #meetTheFarmers-Cards .meetTheFarmers-Card .meetTheFarmers-Bottom h2 {
+  color: #2a491d;
+}
+main #MeetTheFarmers #meetTheFarmers-Cards .meetTheFarmers-Card .meetTheFarmers-Bottom p {
+  color: #7d8978;
+  font-weight: 500;
+}
+main #OurFeedbacks {
+  display: flex;
+  align-items: center;
+  background-image: url("../images/our-feedbacks/bg-3.jpg");
+  width: 100% !important;
+  height: 100vh;
+  position: relative;
+}
+main #OurFeedbacks .ourFeedbacks-Header {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  padding-left: 5vh;
+  gap: 5vh;
+}
+main #OurFeedbacks .ourFeedbacks-Header #ourFeedbacks-HeaderTop h1 {
+  width: 80%;
+  font-size: 42px;
+  font-weight: 900;
+}
+main #OurFeedbacks .ourFeedbacks-Header p {
+  color: #7d8978;
+}
+main #OurFeedbacks #littleGreenShape {
+  position: absolute;
+  left: 70vh;
+  top: 6vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 15%;
+  height: auto;
+  z-index: 1;
+}
+main #OurFeedbacks .ourFeedbacks-Center {
+  background-image: url("../images/our-feedbacks/base-4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  scrollbar-width: none;
+  position: relative;
+  left: 10vh;
+  width: 30%;
+  height: 90vh;
+  border-radius: 1vh;
+  margin-top: 15vh;
+  z-index: 2;
+}
+main #OurFeedbacks .ourFeedbacks-Center:active {
+  cursor: grab;
+}
+main #OurFeedbacks .ourFeedbacks-Center .ourFeedbacks-CenterCards {
+  display: flex;
+  position: relative;
+}
+main #OurFeedbacks .ourFeedbacks-Center .ourFeedbacks-CenterCards .ourFeedbacks-CenterCard {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2vh;
+  align-items: center;
+  text-align: center;
+  gap: 4vh;
+}
+main #OurFeedbacks .ourFeedbacks-Center .ourFeedbacks-CenterCards .ourFeedbacks-CenterCard img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 20%;
+  height: 20%;
+  margin-bottom: -2vh;
+  transition: 0.3s;
+}
+main #OurFeedbacks .ourFeedbacks-Center .ourFeedbacks-CenterCards .ourFeedbacks-CenterCard img:hover {
+  transform: scale(0.89);
+}
+main #OurFeedbacks .ourFeedbacks-Center .ourFeedbacks-CenterCards .ourFeedbacks-CenterCard p {
+  font-size: 20px;
+  color: #7d8978;
+  width: 80%;
+  line-height: 5vh;
+}
+main #OurFeedbacks .ourFeedbacks-Center .ourFeedbacks-CenterCards .ourFeedbacks-CenterCard .ourFeedbacks-CenterCardBottom {
+  margin-top: 1vh;
+}
+main #OurFeedbacks .ourFeedbacks-Center .ourFeedbacks-CenterCards .ourFeedbacks-CenterCard .ourFeedbacks-CenterCardBottom h3 {
+  color: #2a491d;
+}
+main #OurFeedbacks .ourFeedbacks-Center .ourFeedbacks-CenterCards .ourFeedbacks-CenterCard .ourFeedbacks-CenterCardBottom h5 {
+  color: #50a72c;
+}
+main #OurFeedbacks .ourFeedbacks-Center .ourFeedbacks-CenterCards .ourFeedbacks-CenterCard .ourFeedbacks-Person {
+  position: relative;
+  top: 5vh;
+  left: -7vh;
+}
+main #OurFeedbacks .ourFeedbacks-Center .BothSwiperArrows {
+  color: #7E7E7E;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 35vh;
+  border-radius: 6vh;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+main #OurFeedbacks .ourFeedbacks-Center .BothSwiperArrows:hover {
+  color: #50a72c;
+}
+main #OurFeedbacks .ourFeedbacks-Center .BothSwiperArrows::after {
+  content: "";
+}
+main #OurFeedbacks .ourFeedbacks-Center .swiper-button-prev {
+  left: 0;
+}
+main #OurFeedbacks .ourFeedbacks-Center .swiper-button-next {
+  right: 0;
+}
+main #OurFeedbacks #ourFeedback-Right {
+  position: relative;
+}
+main #OurFeedbacks #ourFeedback-Right img:nth-child(1) {
+  position: absolute;
+  right: 0;
+}
+main #OurFeedbacks #ourFeedback-Right img:nth-child(2) {
+  border-radius: 50%;
+}
+main #HealthyFood {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 15vh;
+}
+main #HealthyFood .healthyFood-Card {
+  display: flex;
+  flex-direction: column;
+  width: 50vh;
+  height: 70vh;
+}
+main #HealthyFood .healthyFood-Card .healthyFood-MainImage {
+  width: 50vh;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #HealthyFood .healthyFood-Card .healthyFood-Header {
+  background-color: white;
+  width: 90%;
+  height: 25vh;
+  position: relative;
+  bottom: 15vh;
+  left: 2.5vh;
+  padding-left: 5vh;
+  padding-top: 2.5vh;
+  box-shadow: 0 3px 3px #c2c8bb;
+  border-radius: 1vh;
+}
+main #HealthyFood .healthyFood-Card .healthyFood-Header .gradientLine {
+  width: 15%;
+  height: 2.8px;
+}
+main #HealthyFood .healthyFood-Card .healthyFood-Header h1 {
+  color: #2a491d;
+}
+main #HealthyFood .healthyFood-Card .healthyFood-Header p {
+  color: #7d8978;
+}
+main #HealthyFood .healthyFood-Card .healthyFood-Header .backgroundRightShape {
+  position: absolute;
+  right: 0vh;
+  bottom: 0;
+  height: 16vh;
+}
+main #HealthyFood .healthyFood-Card .healthyFood-Header i {
+  position: absolute;
+  top: -3.5vh;
+  right: 5vh;
+  width: 7vh;
+  height: 7vh;
+  text-align: center;
+  padding-top: 2.1vh;
+  border-radius: 5vh;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+main #FromTheBlogPosts {
+  display: flex;
+  flex-direction: column;
+}
+main #FromTheBlogPosts .fromTheBlogPosts-Header {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+main #FromTheBlogPosts #fromTheBlogPosts-Cards {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+}
+main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 90%;
+}
+main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card .fromTheBlogPosts-Main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding-bottom: 5vh;
+  width: 60vh;
+  gap: 5vh;
+  position: relative;
+  bottom: 25vh;
+  border-radius: 1vh;
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1);
+}
+main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card .fromTheBlogPosts-Main .fromTheBlogPosts-MainTop {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 5vh;
+  width: 70%;
+}
+main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card .fromTheBlogPosts-Main .fromTheBlogPosts-MainTop a {
+  color: #7d8978;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card .fromTheBlogPosts-Main .fromTheBlogPosts-MainTop a i {
+  color: #50a72c;
+}
+main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card .fromTheBlogPosts-Main .cardLink {
+  font-weight: 900;
+}
+main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card .fromTheBlogPosts-Main .readMore {
+  color: #7d8978;
+  font-weight: 400;
+}
+main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card .fromTheBlogPosts-Main .cardLink, main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card .fromTheBlogPosts-Main .readMore {
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  width: 70%;
+}
+main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card .fromTheBlogPosts-Main .cardLink:hover, main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card .fromTheBlogPosts-Main .readMore:hover {
+  color: #50a72c;
+}
+main #Subscription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #50a72c;
+  border-radius: 6vh;
+  position: relative;
+  left: 10vh;
+  width: 90%;
+  height: 30vh;
+  padding-left: 5vh;
+}
+main #Subscription #subscriptionBackgroundImage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 25vh;
+}
+main #Subscription #subscription-Left {
+  display: flex;
+  align-items: center;
+  gap: 3vh;
+  width: 100%;
+}
+main #Subscription #subscription-Left #attachmentIcon {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 10vh;
+  height: 10vh;
+}
+main #Subscription #subscription-Left .subscription-TextHeader h2, main #Subscription #subscription-Left .subscription-TextHeader h1 {
+  color: white;
+}
 footer {
   background-image: url("../images/footer/bg-4.jpg");
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+footer a {
+  color: #91a589;
+  font-weight: 400;
+  transition: 0.2s ease-in-out;
+}
+footer a:hover {
+  color: #ffbd3c;
+}
+footer p {
+  color: white;
+}
+footer p, footer a {
+  font-size: 16px;
+}
+footer h3 {
+  display: flex;
+  align-items: center;
+  gap: 1.5vh;
+}
+footer h3 img {
+  padding-top: 0.5vh;
+}
+footer #footerTop {
+  display: flex;
+  gap: 2vh;
+  align-items: center;
+  padding: 10vh;
+  position: relative;
+}
+footer #footerTop #footerTopLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+footer #footerTop #footerTopLeft img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 25%;
+  height: 25%;
+}
+footer #footerTop #footerTopLeft h3 {
+  width: 80%;
+}
+footer #footerTop #footerTopLeft .footerSocialLinks {
+  display: flex;
+  gap: 1vh;
+}
+footer #footerTop #footerTopLeft .footerSocialLinks li {
+  width: 7vh;
+  height: 7vh;
+  background-color: #223d17;
+  border-radius: 5vh;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 1.7vh;
+}
+footer #footerTop #footerTopLeft .footerSocialLinks li a {
+  color: white;
+}
+footer #footerTop #footerTopLeft .footerSocialLinks li:hover {
+  background-color: #ffbd3c;
+  transform: translateY(-2vh);
+}
+footer #footerTop #footerTopRight {
+  display: flex;
+  align-items: flex-start;
+  gap: 5vh;
+}
+footer #footerTop #footerTopRight .footerTopCenterLinks {
+  display: flex;
+  flex-direction: column;
+  width: 30vh;
+  gap: 4vh;
+}
+footer #footerTop #footerTopRight .footerTopCenterLinks ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+footer #footerTop #footerTopRight #gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5vh;
+}
+footer #footerTop #footerTopRight #gallery .galleryImages {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2vh;
+  width: 50vh;
+}
+footer #footerTop #footerTopRight #gallery .galleryImages img {
+  width: 12vh;
+  height: 12vh;
+  border-radius: 1vh;
+}
+footer #footerTop #footerTopRight #contactInfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3vh;
+  width: 40vh;
+}
+footer #footerTop #footerTopRight #contactInfo #contactInfoMain {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5.5vh;
+}
+footer #footerTop #footerTopRight #contactInfo #contactInfoMain p {
+  color: #91a589;
+  width: 70%;
+}
+footer #footerTop #footerTopRight #contactInfo #contactInfoMain #emailAddress {
+  font-size: 18px;
+}
+footer #footerTop #footerTopRight #contactInfo #contactInfoMain span {
+  position: relative;
+}
+footer #footerTop #footerTopRight #contactInfo #contactInfoMain span::after {
+  content: "";
+  position: absolute;
+  bottom: -1vh;
+  left: 0;
+  width: 65%;
+  height: 1px;
+  border-bottom: solid 1px white;
+}
+footer #footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5vh;
+  padding: 5vh;
+  background-color: #223d17;
+}
+footer #footerBottom #ogenixWebsite {
+  color: #FFCC7E;
+}
+footer #footerBottom ul {
+  display: flex;
+  gap: 4vh;
 }/*# sourceMappingURL=style.css.map */
