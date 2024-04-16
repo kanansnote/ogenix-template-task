@@ -11,6 +11,7 @@
 
 a {
     text-decoration: none;
+    font-weight: 600;
 }
 
 ul {
@@ -79,4 +80,10 @@ section {
     border-radius: 5vh;
     transition: 0.3s ease-in-out;
     width: max-content;
+}
+
+.cardLink {
+    color:#2a491d;
+    font-size: 20px;
+    font-weight: 600;
 }

@@ -233,12 +233,6 @@ main {
                     flex-direction: column;
                     gap: 3vh;
                     width: 80%;
-
-                    a {
-                        color:#2a491d;
-                        font-size: 20px;
-                        font-weight: 600;
-                    }
                 }
 
                 a {
@@ -320,6 +314,132 @@ main {
                 h1 {
                     font-weight: 800;
                 }
+            }
+        }
+    }
+
+    #CheckoutNewProducts {
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+
+        .checkoutNewProducts-Header {
+            display: flex;
+            align-items: center;
+        }
+
+        #checkoutNewProducts-Cards {
+            display: flex;
+            justify-content: space-around;
+            
+            .checkoutNewProducts-Card {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 35vh;
+                height: 60vh;
+                border: solid 1px #f2f2ec;
+                border-radius: 2vh;
+                gap: 2vh;
+
+                p {
+                    display: flex;
+                    gap: 3vh;
+                    
+                    span {
+                        text-decoration: line-through;
+                        color: #c2c8bb;
+                    }
+                }
+
+                img {
+                    width: 75%;
+                    height: auto;
+                }
+
+                button {
+                    border: none;
+                    cursor: pointer;
+                }
+                
+            }
+        }
+    }
+
+    #WhyChooseOgenix {
+        display: flex;
+        justify-content: space-around;
+        background-image: url('../images/why-choose-ogenix/bg-2.jpg');
+        background-size: contain;
+        height: 90vh;
+        padding-top: 5vh;
+        position: relative;
+
+        img {
+            object-fit: contain;
+        }
+
+        #whyChooseOgenix-Left {
+            display: flex;
+            gap: 5vh;
+            flex-direction: column;
+
+            .whyChooseOgenix-Header {
+                
+                h1 {
+                    color: white;
+                }
+            }
+
+            #whyChooseOgenix-Cards {
+                display: flex;
+                width: 100vh;
+                flex-wrap: wrap;
+                gap: 5vh;
+                
+                .whyChooseOgenix-Card {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2vh;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #223d17;
+                    width: 40vh;
+                    height: 50%;
+
+                    h3 {
+                        color: white;
+                        font-weight: 600;
+                    }
+
+                    img {
+                        width: 30%;
+                        height: 30%;
+                    }
+                }
+            }
+        }
+
+        #whyChooseOgenix-Right {
+            display: flex;
+
+            img {
+                width: 70%;
+                height: 50%;
+            }
+
+            #whyChooseOgenix-TopAndBottom {
+                display: flex;
+                flex-direction: column;
+                gap: 15vh;
+            }
+            
+            #whyChooseOgenix-Middle {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding-right: 3.7vh;
             }
         }
     }

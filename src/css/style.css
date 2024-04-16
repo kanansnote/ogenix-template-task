@@ -9,6 +9,7 @@
 
 a {
   text-decoration: none;
+  font-weight: 600;
 }
 
 ul {
@@ -72,6 +73,12 @@ section {
   transition: 0.3s ease-in-out;
   width: -moz-max-content;
   width: max-content;
+}
+
+.cardLink {
+  color: #2a491d;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 header {
@@ -138,6 +145,7 @@ header #HeaderBoth #HeaderBottom nav ul {
 }
 header #HeaderBoth #HeaderBottom nav ul a {
   color: #7d8978;
+  font-weight: 400;
 }
 header #HeaderBoth #HeaderBottom nav ul a:hover {
   color: #50a72c;
@@ -370,11 +378,6 @@ main #OurCategories #ourCategories-Cards .ourCategories-Card .ourCategories-Card
   gap: 3vh;
   width: 80%;
 }
-main #OurCategories #ourCategories-Cards .ourCategories-Card .ourCategories-CardBack a {
-  color: #2a491d;
-  font-size: 20px;
-  font-weight: 600;
-}
 main #OurCategories #ourCategories-Cards .ourCategories-Card a i {
   position: relative;
   bottom: 13.5vh;
@@ -439,6 +442,109 @@ main #OrganicFood-Cards .organicFood-Card .organicFood-Header h2, main #OrganicF
 }
 main #OrganicFood-Cards .organicFood-Card .organicFood-Header h1 {
   font-weight: 800;
+}
+main #CheckoutNewProducts {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+main #CheckoutNewProducts .checkoutNewProducts-Header {
+  display: flex;
+  align-items: center;
+}
+main #CheckoutNewProducts #checkoutNewProducts-Cards {
+  display: flex;
+  justify-content: space-around;
+}
+main #CheckoutNewProducts #checkoutNewProducts-Cards .checkoutNewProducts-Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35vh;
+  height: 60vh;
+  border: solid 1px #f2f2ec;
+  border-radius: 2vh;
+  gap: 2vh;
+}
+main #CheckoutNewProducts #checkoutNewProducts-Cards .checkoutNewProducts-Card p {
+  display: flex;
+  gap: 3vh;
+}
+main #CheckoutNewProducts #checkoutNewProducts-Cards .checkoutNewProducts-Card p span {
+  text-decoration: line-through;
+  color: #c2c8bb;
+}
+main #CheckoutNewProducts #checkoutNewProducts-Cards .checkoutNewProducts-Card img {
+  width: 75%;
+  height: auto;
+}
+main #CheckoutNewProducts #checkoutNewProducts-Cards .checkoutNewProducts-Card button {
+  border: none;
+  cursor: pointer;
+}
+main #WhyChooseOgenix {
+  display: flex;
+  justify-content: space-around;
+  background-image: url("../images/why-choose-ogenix/bg-2.jpg");
+  background-size: contain;
+  height: 90vh;
+  padding-top: 5vh;
+  position: relative;
+}
+main #WhyChooseOgenix img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #WhyChooseOgenix #whyChooseOgenix-Left {
+  display: flex;
+  gap: 5vh;
+  flex-direction: column;
+}
+main #WhyChooseOgenix #whyChooseOgenix-Left .whyChooseOgenix-Header h1 {
+  color: white;
+}
+main #WhyChooseOgenix #whyChooseOgenix-Left #whyChooseOgenix-Cards {
+  display: flex;
+  width: 100vh;
+  flex-wrap: wrap;
+  gap: 5vh;
+}
+main #WhyChooseOgenix #whyChooseOgenix-Left #whyChooseOgenix-Cards .whyChooseOgenix-Card {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #223d17;
+  width: 40vh;
+  height: 50%;
+}
+main #WhyChooseOgenix #whyChooseOgenix-Left #whyChooseOgenix-Cards .whyChooseOgenix-Card h3 {
+  color: white;
+  font-weight: 600;
+}
+main #WhyChooseOgenix #whyChooseOgenix-Left #whyChooseOgenix-Cards .whyChooseOgenix-Card img {
+  width: 30%;
+  height: 30%;
+}
+main #WhyChooseOgenix #whyChooseOgenix-Right {
+  display: flex;
+}
+main #WhyChooseOgenix #whyChooseOgenix-Right img {
+  width: 70%;
+  height: 50%;
+}
+main #WhyChooseOgenix #whyChooseOgenix-Right #whyChooseOgenix-TopAndBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 15vh;
+}
+main #WhyChooseOgenix #whyChooseOgenix-Right #whyChooseOgenix-Middle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 3.7vh;
 }
 
 footer {
