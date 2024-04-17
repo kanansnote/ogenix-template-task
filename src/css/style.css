@@ -95,6 +95,82 @@ section {
   background-color: #50a72c;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.dropdown .dropbtn {
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+  color: #7d8978;
+}
+.dropdown .dropbtn i {
+  margin-left: 5px;
+  transition: 0.2s ease-in-out;
+  position: relative;
+  top: 1px;
+}
+.dropdown .dropdown-content {
+  display: none;
+  background-color: #f1f1f1;
+  width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: 0.3s;
+  position: relative;
+  top: 10vh;
+  left: -3vh;
+}
+.dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px 12px 20px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown .dropdown-content a:hover {
+  background-color: #50a72c;
+  color: white !important;
+}
+.dropdown .dropdownLanguages {
+  position: absolute;
+  right: 0;
+  min-width: 115px;
+}
+.dropdown .dropdownCurrencies {
+  position: absolute;
+  right: 0;
+  min-width: 90px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn i {
+  transform: rotate(180deg);
+}
+
+#goTop {
+  position: absolute;
+  right: 2vh;
+  bottom: 0;
+  background-color: #50a72c;
+  z-index: 10;
+  width: 10vh;
+  height: 10vh;
+  text-align: center;
+  padding-top: 3.5vh;
+  border-radius: 1vh;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#goTop i {
+  color: white;
+}
+#goTop:hover {
+  background-color: #ffbd3c;
+}
+
 header {
   display: flex;
 }
@@ -124,6 +200,10 @@ header #HeaderBoth #HeaderTop #headerTopLeft .socialLinks {
   position: absolute;
   top: 0;
   left: 74vh;
+  cursor: pointer;
+}
+header #HeaderBoth #HeaderTop #headerTopLeft .socialLinks li:hover {
+  color: #ffbd3c;
 }
 header #HeaderBoth #HeaderTop #headerTopRight {
   display: flex;
@@ -155,49 +235,62 @@ header #HeaderBoth #HeaderBottom {
 header #HeaderBoth #HeaderBottom nav ul {
   display: flex;
   align-items: center;
-  gap: 14vh;
+  gap: 10vh;
 }
-header #HeaderBoth #HeaderBottom nav ul a {
+header #HeaderBoth #HeaderBottom nav ul li {
+  padding: 4vh 0;
+  position: relative;
+}
+header #HeaderBoth #HeaderBottom nav ul li a {
   color: #7d8978;
   font-weight: 400;
 }
-header #HeaderBoth #HeaderBottom nav ul a:hover {
+header #HeaderBoth #HeaderBottom nav ul li a:hover {
   color: #50a72c;
 }
-header #HeaderBoth #HeaderBottom #headerBottomRight {
+header #HeaderBoth #HeaderBottom nav ul li::after {
+  content: "";
+  display: none;
+  position: absolute;
+  bottom: 2.7vh;
+  width: 100%;
+  border-bottom: solid 3px #50a72c;
+  transition: 0.3s;
+}
+header #HeaderBoth #HeaderBottom nav ul li:hover::after {
+  display: block;
+}
+header #HeaderBoth #headerBottomRight {
   display: flex;
   align-items: center;
   gap: 1vh;
 }
-header #HeaderBoth #HeaderBottom #headerBottomRight::before {
+header #HeaderBoth #headerBottomRight::before {
   content: "";
   width: 1vh;
   height: 5vh;
   border-left: solid 1px #7d8978;
   padding-left: 12vh;
 }
-header #HeaderBoth #HeaderBottom #headerBottomRight i {
+header #HeaderBoth #headerBottomRight i {
   font-size: 20px;
-}
-header #HeaderBoth #HeaderBottom #headerBottomRight i:nth-child(1) {
-  font-size: 30px;
-  padding-right: 5vh;
   cursor: pointer;
 }
-header #HeaderBoth #HeaderBottom #headerBottomRight i:nth-child(1):hover {
+header #HeaderBoth #headerBottomRight i:nth-child(1) {
+  font-size: 30px;
+  padding-right: 5vh;
+  transition: 0.2s ease-out;
+}
+header #HeaderBoth #headerBottomRight i:nth-child(1):hover {
   color: #50a72c;
 }
-header #HeaderBoth #HeaderBottom #headerBottomRight i:nth-child(2) {
-  background-color: #50a72c;
-  color: white;
+header #HeaderBoth #headerBottomRight i:nth-child(2) {
   padding: 3vh;
   border-radius: 5vh;
 }
-header #HeaderBoth #HeaderBottom #headerBottomRight a {
-  background-color: #50a72c;
+header #HeaderBoth #headerBottomRight a {
   border-radius: 5vh;
   padding: 3vh;
-  color: white;
 }
 
 main #UpBanner {
@@ -278,12 +371,35 @@ main #ServiceOptions .serviceOptions-Card .serviceOptions-CardText {
 main #FarmingWithLove {
   display: flex;
   justify-content: space-around;
+  gap: 15vh;
   align-items: center;
+  position: relative;
 }
-main #FarmingWithLove #farmingWithLove-Image {
+main #FarmingWithLove #farmingWithLove-Images {
   -o-object-fit: contain;
      object-fit: contain;
   width: 50vh;
+  position: relative;
+}
+main #FarmingWithLove #farmingWithLove-Images img:nth-child(1) {
+  width: auto;
+  height: 109.4vh;
+}
+main #FarmingWithLove #farmingWithLove-Images img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: -5vh;
+  z-index: -1;
+}
+main #FarmingWithLove #farmingWithLove-Images img:nth-child(3) {
+  position: absolute;
+  top: 12vh;
+  right: -23vh;
+  z-index: 1;
+  transition: 0.3s ease;
+}
+main #FarmingWithLove #farmingWithLove-Images img:nth-child(3):hover {
+  transform: scale(0.9);
 }
 main #FarmingWithLove #farmingWithLove-Main {
   width: 50%;
@@ -487,23 +603,32 @@ main #CheckoutNewProducts #checkoutNewProducts-Cards .checkoutNewProducts-Card b
 }
 main #WhyChooseOgenix {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-image: url("../images/why-choose-ogenix/bg-2.jpg");
+  background-repeat: no-repeat;
   background-size: contain;
   height: 90vh;
-  padding-top: 5vh;
+  padding-top: 8vh;
+  padding-left: 10vh;
   position: relative;
 }
 main #WhyChooseOgenix img {
   -o-object-fit: contain;
      object-fit: contain;
 }
+main #WhyChooseOgenix #leafInTheLeftCorner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
 main #WhyChooseOgenix #whyChooseOgenix-Left {
   display: flex;
   gap: 5vh;
   flex-direction: column;
+  z-index: 2;
 }
-main #WhyChooseOgenix #whyChooseOgenix-Left .whyChooseOgenix-Header h1 {
+main #WhyChooseOgenix #whyChooseOgenix-Left .whyChooseOgenix-Header h2, main #WhyChooseOgenix #whyChooseOgenix-Left .whyChooseOgenix-Header h1 {
   color: white;
 }
 main #WhyChooseOgenix #whyChooseOgenix-Left #whyChooseOgenix-Cards {
@@ -529,24 +654,19 @@ main #WhyChooseOgenix #whyChooseOgenix-Left #whyChooseOgenix-Cards .whyChooseOge
 main #WhyChooseOgenix #whyChooseOgenix-Left #whyChooseOgenix-Cards .whyChooseOgenix-Card img {
   width: 30%;
   height: 30%;
+  transition: 0.3s ease;
+}
+main #WhyChooseOgenix #whyChooseOgenix-Left #whyChooseOgenix-Cards .whyChooseOgenix-Card img:hover {
+  transform: scale(0.9);
 }
 main #WhyChooseOgenix #whyChooseOgenix-Right {
-  display: flex;
-}
-main #WhyChooseOgenix #whyChooseOgenix-Right img {
-  width: 70%;
-  height: 50%;
-}
-main #WhyChooseOgenix #whyChooseOgenix-Right #whyChooseOgenix-TopAndBottom {
-  display: flex;
-  flex-direction: column;
-  gap: 15vh;
-}
-main #WhyChooseOgenix #whyChooseOgenix-Right #whyChooseOgenix-Middle {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-right: 3.7vh;
+  position: relative;
+  top: -8.4vh;
+  right: 0;
+  width: 100%;
+  height: 83.5vh;
+  width: -moz-max-content;
+  width: max-content;
 }
 main #MeetTheFarmers {
   display: flex;
@@ -781,12 +901,17 @@ main #HealthyFood .healthyFood-Card {
   flex-direction: column;
   width: 50vh;
   height: 70vh;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  border-radius: 1vh;
 }
 main #HealthyFood .healthyFood-Card .healthyFood-MainImage {
   width: 50vh;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  overflow: hidden;
+  border-radius: 3vh;
 }
 main #HealthyFood .healthyFood-Card .healthyFood-Header {
   background-color: white;
@@ -799,6 +924,7 @@ main #HealthyFood .healthyFood-Card .healthyFood-Header {
   padding-top: 2.5vh;
   box-shadow: 0 3px 3px #c2c8bb;
   border-radius: 1vh;
+  z-index: 2;
 }
 main #HealthyFood .healthyFood-Card .healthyFood-Header .gradientLine {
   width: 15%;
@@ -829,6 +955,28 @@ main #HealthyFood .healthyFood-Card .healthyFood-Header i {
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
+main #HealthyFood .healthyFood-Card::after {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 1.5vh;
+  left: 0;
+  width: 100%;
+  height: 48vh;
+  background-color: rgba(81, 167, 44, 0.1450980392);
+  transition: 0.3s ease-in-out;
+  border-radius: 1vh;
+  z-index: 1;
+}
+main #HealthyFood .healthyFood-Card:hover {
+  transform: translateY(-2vh);
+}
+main #HealthyFood .healthyFood-Card:hover .healthyFood-MainImage {
+  filter: brightness(70%);
+}
+main #HealthyFood .healthyFood-Card:hover::after {
+  display: block;
+}
 main #FromTheBlogPosts {
   display: flex;
   flex-direction: column;
@@ -853,6 +1001,8 @@ main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 90%;
+  border-radius: 3vh;
+  transition: 0.3s ease-in-out;
 }
 main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card .fromTheBlogPosts-Main {
   display: flex;
@@ -867,6 +1017,7 @@ main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card .fromTheBl
   bottom: 25vh;
   border-radius: 1vh;
   box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1);
+  z-index: 2;
 }
 main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card .fromTheBlogPosts-Main .fromTheBlogPosts-MainTop {
   display: flex;
@@ -893,12 +1044,34 @@ main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card .fromTheBl
   font-weight: 400;
 }
 main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card .fromTheBlogPosts-Main .cardLink, main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card .fromTheBlogPosts-Main .readMore {
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-out;
   text-align: center;
   width: 70%;
 }
 main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card .fromTheBlogPosts-Main .cardLink:hover, main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card .fromTheBlogPosts-Main .readMore:hover {
   color: #50a72c;
+}
+main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card::after {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 3.5vh;
+  width: 90%;
+  height: 48vh;
+  background-color: rgba(81, 167, 44, 0.1450980392);
+  transition: 0.3s ease-in-out;
+  border-radius: 3vh;
+  z-index: 1;
+}
+main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card:hover {
+  transform: translate(0);
+}
+main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card:hover img {
+  filter: brightness(70%);
+}
+main #FromTheBlogPosts #fromTheBlogPosts-Cards .fromTheBlogPosts-Card:hover::after {
+  display: block;
 }
 main #Subscription {
   display: flex;
@@ -912,10 +1085,10 @@ main #Subscription {
   height: 30vh;
   padding-left: 5vh;
 }
-main #Subscription #subscriptionBackgroundImage {
+main #Subscription #subscriptionTwoLeaves {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -8vh;
+  left: -11vh;
   height: 25vh;
 }
 main #Subscription #subscription-Left {
@@ -933,6 +1106,76 @@ main #Subscription #subscription-Left #attachmentIcon {
 main #Subscription #subscription-Left .subscription-TextHeader h2, main #Subscription #subscription-Left .subscription-TextHeader h1 {
   color: white;
 }
+main #Subscription #subscription-Left #tomatoImage {
+  position: relative;
+  top: 15vh;
+}
+main #Subscription #subscription-Right {
+  position: relative;
+  bottom: 10vh;
+}
+main #Subscription #subscription-Right #subscription-RightImage {
+  display: flex;
+  flex-direction: column;
+  transform: translate(-23vh, 4vh);
+}
+main #Subscription #subscription-Right #subscription-RightImage img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 22%;
+  height: 22%;
+}
+main #Subscription #subscription-Right #subscription-RightImage img:nth-child(1) {
+  transform: translate(9vh, 4vh);
+  z-index: 1;
+}
+main #Subscription #subscription-Right #subscription-RightImage img:nth-child(2) {
+  z-index: 2;
+}
+main #Subscription #subscription-Right form {
+  display: flex;
+  width: 80vh;
+  position: relative;
+  z-index: 3;
+}
+main #Subscription #subscription-Right form input {
+  padding: 3vh;
+  width: 65vh;
+  border-radius: 1vh;
+  outline: #c2c8bb;
+  border: none;
+}
+main #Subscription #subscription-Right form button {
+  position: absolute;
+  right: 15vh;
+  background-color: #ffbd3c;
+  border: none;
+  padding: 2vh;
+  margin: 1vh;
+  border-radius: 1vh;
+  cursor: pointer;
+}
+main #Subscription #subscription-Right form button i {
+  color: white;
+  font-size: 18px;
+}
+main #Subscription #subscription-Right #fruitSmileImage {
+  position: absolute;
+  top: 8vh;
+  right: -3vh;
+  z-index: 2;
+}
+main #Subscription #subscription-Right #subscriptionBackgroundImage {
+  position: absolute;
+  top: 5vh;
+  right: -4vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 41vh;
+  width: 91%;
+  z-index: 1;
+}
+
 footer {
   background-image: url("../images/footer/bg-4.jpg");
   color: white;

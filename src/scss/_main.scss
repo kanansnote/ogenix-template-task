@@ -97,12 +97,41 @@ main {
     #FarmingWithLove {
         display: flex;
         justify-content: space-around;
+        gap: 15vh;
         align-items: center;
-        
+        position: relative;
 
-        #farmingWithLove-Image {
+        #farmingWithLove-Images {
             object-fit: contain;
             width: 50vh;
+            position: relative;
+
+            img {
+
+                &:nth-child(1) {
+                    width: auto;
+                    height: 109.4vh;
+                }
+
+                &:nth-child(2) {
+                    position: absolute;
+                    top: 0;
+                    left: -5vh;
+                    z-index: -1;
+                }
+
+                &:nth-child(3) {
+                    position: absolute;
+                    top: 12vh;
+                    right: -23vh;
+                    z-index: 1;
+                    transition: 0.3s ease;
+
+                    &:hover {
+                        transform: scale(0.9);
+                    }
+                }
+            }
         }
 
         #farmingWithLove-Main {
@@ -353,25 +382,35 @@ main {
 
     #WhyChooseOgenix {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         background-image: url('../images/why-choose-ogenix/bg-2.jpg');
+        background-repeat: no-repeat;
         background-size: contain;
         height: 90vh;
-        padding-top: 5vh;
+        padding-top: 8vh;
+        padding-left: 10vh;
         position: relative;
 
         img {
             object-fit: contain;
         }
 
+        #leafInTheLeftCorner {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+
         #whyChooseOgenix-Left {
             display: flex;
             gap: 5vh;
             flex-direction: column;
+            z-index: 2;
 
             .whyChooseOgenix-Header {
                 
-                h1 {
+                h2, h1 {
                     color: white;
                 }
             }
@@ -400,31 +439,23 @@ main {
                     img {
                         width: 30%;
                         height: 30%;
+                        transition: 0.3s ease;
+
+                        &:hover {
+                            transform: scale(0.9);
+                        }
                     }
                 }
             }
         }
 
         #whyChooseOgenix-Right {
-            display: flex;
-
-            img {
-                width: 70%;
-                height: 50%;
-            }
-
-            #whyChooseOgenix-TopAndBottom {
-                display: flex;
-                flex-direction: column;
-                gap: 15vh;
-            }
-            
-            #whyChooseOgenix-Middle {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                padding-right: 3.7vh;
-            }
+            position: relative;
+            top: -8.4vh;
+            right: 0;
+            width: 100%;
+            height: 83.5vh;
+            width: max-content;          
         }
     }
 
@@ -526,7 +557,7 @@ main {
                             transition: 0.3s;
 
                             &:hover {
-                                transform: scale(0.90);
+                                transform: scale(0.9);
                             }
                         }
                     }
@@ -716,11 +747,16 @@ main {
             flex-direction: column;
             width: 50vh;
             height: 70vh;
+            transition: 0.3s ease-in-out;
+            position: relative;
+            border-radius: 1vh;
 
             .healthyFood-MainImage {
                 width: 50vh;
                 height: 100%;
                 object-fit: contain;
+                overflow: hidden;
+                border-radius: 3vh;
             }
 
             .healthyFood-Header {
@@ -734,6 +770,7 @@ main {
                 padding-top: 2.5vh;
                 box-shadow: 0 3px 3px #c2c8bb;
                 border-radius: 1vh;
+                z-index: 2;
 
                 .gradientLine {
                     width: 15%;
@@ -769,6 +806,32 @@ main {
                     transition: 0.3s ease-in-out;
                 }
             }
+
+            &::after {
+                content: "";
+                display: none;
+                position: absolute;
+                top: 1.5vh;
+                left: 0;
+                width: 100%;
+                height: 48vh;
+                background-color: #51a72c25;
+                transition: 0.3s ease-in-out;
+                border-radius: 1vh;
+                z-index: 1;
+            }
+
+            &:hover {
+                transform: translateY(-2vh);
+
+                .healthyFood-MainImage {
+                    filter: brightness(70%);
+                }
+            }
+
+            &:hover::after {
+                display: block;
+            }
         }
     }
 
@@ -796,6 +859,8 @@ main {
                 img {
                     object-fit: contain;
                     width: 90%;
+                    border-radius: 3vh;
+                    transition: 0.3s ease-in-out;
                 }
 
                 .fromTheBlogPosts-Main {
@@ -811,6 +876,7 @@ main {
                     bottom: 25vh;
                     border-radius: 1vh;
                     box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1);
+                    z-index: 2;
 
                     .fromTheBlogPosts-MainTop {
                         display: flex;
@@ -842,7 +908,7 @@ main {
                     }
                     
                     .cardLink, .readMore {
-                        transition: 0.3s ease-in-out;
+                        transition: 0.2s ease-out;
                         text-align: center;
                         width: 70%;
 
@@ -851,8 +917,35 @@ main {
                         }
                     }
                 }
+
+                &::after {
+                    content: "";
+                    display: none;
+                    position: absolute;
+                    top: 0;
+                    left: 3.5vh;
+                    width: 90%;
+                    height: 48vh;
+                    background-color: #51a72c25;
+                    transition: 0.3s ease-in-out;
+                    border-radius: 3vh;
+                    z-index: 1;
+                }
+    
+                &:hover {
+                    transform: translate(0);
+    
+                    img {
+                        filter: brightness(70%);
+                    }
+                }
+    
+                &:hover::after {
+                    display: block;
+                }
             }
         }
+
     }
 
     #Subscription {
@@ -867,10 +960,10 @@ main {
         height: 30vh;
         padding-left: 5vh;
 
-        #subscriptionBackgroundImage {
+        #subscriptionTwoLeaves {
             position: absolute;
-            top: 0;
-            right: 0;
+            top: -8vh;
+            left: -11vh;
             height: 25vh;
         }
 
@@ -891,13 +984,86 @@ main {
                 h2, h1 {
                     color: white;
                 }
-            } 
+            }
+
+            #tomatoImage {
+                position: relative;
+                top: 15vh;
+            }
         }
 
+
         #subscription-Right {
+            position: relative;
+            bottom: 10vh;
+
+            #subscription-RightImage {
+                display: flex;
+                flex-direction: column;
+                transform: translate(-23vh, 4vh);
+
+                img {
+                    object-fit: contain;
+                    width: 22%;
+                    height: 22%;
+
+                    &:nth-child(1) {
+                        transform: translate(9vh, 4vh);
+                        z-index: 1;
+                    }
+
+                    &:nth-child(2) {
+                        z-index: 2;
+                    }
+                }
+            }
 
             form {
-                
+                display: flex;
+                width: 80vh;
+                position: relative;
+                z-index: 3;
+
+                input {
+                    padding: 3vh;
+                    width: 65vh;
+                    border-radius: 1vh;
+                    outline: #c2c8bb;
+                    border: none;
+                }
+
+                button {
+                    position: absolute;
+                    right: 15vh;
+                    background-color: #ffbd3c;
+                    border: none;
+                    padding: 2vh;
+                    margin: 1vh;
+                    border-radius: 1vh;
+                    cursor: pointer;
+
+                    i {
+                        color: white;
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            #fruitSmileImage {
+                position: absolute;
+                top: 8vh;
+                right: -3vh;
+                z-index: 2;
+            }
+
+            #subscriptionBackgroundImage {
+                position: absolute;
+                top: 5vh;
+                right: -4vh;
+                object-fit: contain;
+                height: 41vh;
+                width: 91%;
+                z-index: 1;
             }
         }
     }
