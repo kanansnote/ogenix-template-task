@@ -175,16 +175,16 @@ section {
     }
 }
 
-#goTop {
-    position: absolute;
+#topBtn {
+    position: fixed;
     right: 2vh;
-    bottom: 0;
+    bottom: 5vh;
     background-color: #50a72c;
     z-index: 10;
     width: 10vh;
     height: 10vh;
     text-align: center;
-    padding-top: 3.5vh;
+    padding-top: 3.4vh;
     border-radius: 1vh;
     cursor: pointer;
     transition: 0.3s;
@@ -197,3 +197,4 @@ section {
         background-color: #ffbd3c;
     }
 }
+  
